@@ -1,10 +1,22 @@
 article {
-  padding: 30px 0;
   margin: 0 auto;
+  padding: 30px 0;
   width: 80%;
 }
 
+article h1 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  article h1 {
+    text-align: left;
+  }
+}
+
 article img {
+  display: block;
+  margin: 30px auto;
   max-width: 100%;
 }
 
@@ -15,22 +27,22 @@ body {
 }
 
 header {
+  background-color: #f1f1f1;
   position: fixed;
   top: 0;
-  z-index: 1;
   width: 100%;
-  background-color: #f1f1f1;
+  z-index: 1;
 }
 
 header .progress-container {
-  width: 100%;
+  background: #cccccc;
   height: 5px;
-  background: #ccc;
+  width: 100%;
 }
 
 header .progress-bar {
-  height: 100%;
   background: #3498db;
+  height: 100%;
   width: 0%;
 }
 /*# sourceMappingURL=styles.css.map */
